@@ -1,10 +1,10 @@
-// 
+//
 // Global theme styling
-// 
+//
 
 // Scroll padding for all scroll targets on page used with
 // native CSS smooth scrolling
-// 
+//
 // https://caniuse.com/?search=scroll-padding
 
 html {
@@ -13,4 +13,8 @@ html {
 
 body {
     letter-spacing: $base-letter-spacing;
+}
+
+.text-white-15 {
+    color: fade-out($white, 0.15);
 }

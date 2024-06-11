@@ -1,6 +1,6 @@
-// 
+//
 // Navbar
-// 
+//
 
 #mainNav {
     min-height: 3.5rem;
@@ -18,15 +18,16 @@
     }
 
     .navbar-brand {
-        color: $black;
+        color: $gray-700;
         font-weight: 700;
         padding: 0.9rem 0;
+        font-family: $font-family-special;
     }
 
     .navbar-nav {
         .nav-item {
             &:hover {
-                color: fade($white, 80%);
+                color: $gray-700;
                 outline: none;
                 background-color: transparent;
             }
@@ -45,10 +46,11 @@
         border-bottom: none;
         background-color: transparent;
         transition: background-color 0.3s ease-in-out;
+        display: none;
 
         .navbar-brand {
             padding: 0.5rem 0;
-            color: fade-out($white, 0.5);
+            color: fade-out($primary, 0);
         }
 
         .nav-link {
@@ -67,9 +69,10 @@
 
         &.navbar-shrink {
             background-color: $white;
+            display: inline;
 
             .navbar-brand {
-                color: $black;
+                color: $primary;
             }
 
             .nav-link {

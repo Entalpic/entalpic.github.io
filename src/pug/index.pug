@@ -7,17 +7,32 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
         meta(name='author', content='')
+        //- Facebook Open Graph Meta Data
+        meta(property="og:url" content="https://entalpic.ai")
+        meta(property="og:type" content="")
+        meta(property="og:title" content="Entalpic - AI for Chemistry & Materials")
+        meta(property="og:description" content="Entalpic's mission is to leverage artificial intelligence to accelerate the development of new materials and chemical processes for a fair and ecological transition.")
+        meta(property="og:image" content="")
 
-        title Grayscale - Start Bootstrap Theme
+        //- Twitter Meta Data
+        meta(name="twitter:card" content="summary_large_image")
+        meta(name="twitter:site" content="")
+        meta(name="twitter:creator" content="")
+        meta(name="twitter:title" content="")
+        meta(name="twitter:description" content="")
+        meta(name="twitter:image" content="")
 
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        title Entalpic - AI for Chemistry &amp; Materials
+
+        link(rel='icon', type='image/x-icon', href='assets/ENTALPIC-DELTA.ico')
 
         // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
+        script(src='https://use.fontawesome.com/releases/v6.5.0/js/all.js', crossorigin='anonymous')
 
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Varela+Round', rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap', rel='stylesheet')
+
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
@@ -27,7 +42,7 @@ html(lang='en')
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container.px-4.px-lg-5
-                a.navbar-brand(href='#page-top') Start Bootstrap
+                a.navbar-brand(href='#page-top') Entalpic
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
@@ -36,7 +51,7 @@ html(lang='en')
                         li.nav-item
                             a.nav-link(href='#about') About
                         li.nav-item
-                            a.nav-link(href='#projects') Projects
+                            a.nav-link(href='#team') Team
                         li.nav-item
                             a.nav-link(href='#signup') Contact
 
@@ -45,55 +60,76 @@ html(lang='en')
             .container.px-4.px-lg-5.d-flex.h-100.align-items-center.justify-content-center
                 .d-flex.justify-content-center
                     .text-center
-                        h1.mx-auto.my-0.text-uppercase Grayscale
-                        h2.text-white-50.mx-auto.mt-2.mb-5 A free, responsive, one page Bootstrap theme created by Start Bootstrap.
-                        a.btn.btn-primary(href='#about') Get Started
+                        h1.mx-auto.my-0.text-uppercase Entalpic
+                        h2#sub-title.mx-auto.mt-5.mb-5 AI &amp; materials research for a fair and ecological transition.
+                        a.btn.btn-secondary(href='#about') Learn more
+                        p.mt-5
+                            a(href="#team") (We are hiring!)
+
 
         // About
         section#about.about-section.text-center
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-lg-8
-                        h2.text-white.mb-4 Built with Bootstrap 5
-                        p.text-white-50
-                            | Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on 
-                            a(href='https://startbootstrap.com/theme/grayscale/') the preview page.
-                            | The theme is open source, and you can use it for any purpose, personal or commercial.
-                img.img-fluid(src='assets/img/ipad.png', alt='...')
+                        h2.text-white.mb-4
+                            span#brand-about Entalpic
+                            | is in for the long run.
+                        .mb-5
 
-        // Projects
-        section#projects.projects-section.bg-light
+                            p Entalpic's mission is to leverage artificial intelligence to accelerate the development of new materials and chemical processes for a fair and ecological transition. We are a team of scientists and engineers with a passion for innovation and sustainability.
+
+                            p Our goal is to provide the tools and expertise needed to design and optimize materials and chemicals with improved performance and reduced environmental impact. We believe that AI can help us to create a more sustainable future for all.
+
+                            p We are currently in stealth mode but welcome collaborations and partnerships. If you are interested in working with us, please
+                                a(href="#signup")#get-in-touch.text-secondary get in touch
+                                | !
+                img.img-fluid(src='assets/img/pexels-adrien-olichon-1257089-3137072.jpg', alt='...')
+
+        // Team
+        section#team.team-section.bg-light
             .container.px-4.px-lg-5
                 // Featured Project Row
                 .row.gx-0.mb-4.mb-lg-5.align-items-center
-                    .col-xl-8.col-lg-7
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/bg-masthead.jpg', alt='...')
-                    .col-xl-4.col-lg-5
-                        .featured-text.text-center.text-lg-left
-                            h4 Shoreline
+                    .col-xl-6.col-lg-5
+                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/pexels-k-g-13634964-16311421.jpg', alt='...')
+                    .col-xl-6.col-lg-7
+                        .featured-text.text-lg-left
+                            h4 Founders
+                            p.text-black-50.mb-3
+                                a(href="https://www.linkedin.com/in/mgaltier/").mb-3 Mathieu Galtier
+                                | is Entalpic's CEO. With 10 years of experience in startups, including 6 at Owkin, he is passionate about AI and its applications in healthcare and sustainability. He holds a PhD in Maths and Neuroscience and a MSc in Computer Science from the ENS Ulm.
+                            p.text-black-50.mb-3
+                                a(href="https://www.linkedin.com/in/victor-schmidt-30418083/").mb-3 Victor Schmidt
+                                | is Entalpic's CTO. He is a dedicated engineer from École polytechnique (Paris) with a PhD in AI applied to climate change mitigation from Université de Montréal (supervised by Yoshua Bengio).
                             p.text-black-50.mb-0
-                                | Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
+                                a(href="https://www.linkedin.com/in/alexandre-duval-b00531128/") Alexandre Duval
+                                | is Entalpic's CS(cience)O. He has a renowned experitise in Graph Machine Learning and its applications to materials science. He holds a PhD in Machine Learning from École Centrale Paris &amp; INRIA.
                 // Project One Row
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
                     .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-01.jpg', alt='...')
+                        img.img-fluid(src='assets/img/pexels-ermakov-12083872.jpg', alt='...')
                     .col-lg-6
-                        .bg-black.text-center.h-100.project
+                        .bg-primary.text-center.h-100.project
                             .d-flex.h-100
                                 .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white Misty
-                                    p.mb-0.text-white-50
-                                        | An example of where you can put an image of a project, or anything else, along with a description.
+                                    h4.text-white.mt-3 We are hiring!
+                                    p.mb-3.text-white-15 We are looking for talented individuals to join our team. If you are passionate about AI, sustainability, and innovation, we want to hear from you!
+
+                                    p.mb-3.text-white-15 Current positions available: Machine Learning Engineer, Data Scientist, Software Engineer, Research Scientist, and more.
+
+                                    a.mb-3.btn.btn-secondary(href='https://entalpic.notion.site/Entalpic-is-hiring-9f29b9a69fb840508cd3f9a7c1c0d057') Apply now!
+
                 // Project Two Row
                 .row.gx-0.justify-content-center
                     .col-lg-6
-                        img.img-fluid(src='assets/img/demo-image-02.jpg', alt='...')
+                        img.img-fluid(src='assets/img/pexels-adrien-olichon-1257089-3137068.jpg', alt='...')
                     .col-lg-6.order-lg-first
-                        .bg-black.text-center.h-100.project
+                        .bg-primary.text-center.h-100.project
                             .d-flex.h-100
                                 .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Mountains
-                                    p.mb-0.text-white-50
+                                    h4.text-white Something else
+                                    p.mb-0.text-white-15
                                         | Another example of a project with its respective description. These sections work well responsively as well!
 
         // Signup
@@ -112,7 +148,7 @@ html(lang='en')
                         // To make this form functional, sign up at
                         // https://startbootstrap.com/solution/contact-forms
                         // to get an API token!
-                        
+
                         form#contactForm.form-signup(data-sb-form-api-token='API_TOKEN')
 
                             // Email address input
@@ -126,7 +162,7 @@ html(lang='en')
                                         data-sb-validations='required,email'
                                     )
                                 .col-auto
-                                    button#submitButton.btn.btn-primary.disabled(type='submit') Notify Me!
+                                    button#submitButton.btn.btn-secondary.disabled(type='submit') Notify Me!
                             .invalid-feedback.mt-2(data-sb-feedback='emailAddress:required')
                                 | An email is required.
                             .invalid-feedback.mt-2(data-sb-feedback='emailAddress:email')
@@ -153,16 +189,16 @@ html(lang='en')
                                 .text-center.text-danger.mb-3.mt-2 Error sending message!
 
         // Contact
-        section.contact-section.bg-black
+        section.contact-section.bg-primary
             .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5
+                .row.gx-4.gx-lg-5.justify-content-evenly
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
                                 i.fas.fa-map-marked-alt.text-primary.mb-2
                                 h4.text-uppercase.m-0 Address
                                 hr.my-4.mx-auto
-                                .small.text-black-50 4923 Market Street, Orlando FL
+                                .small.text-black-50 Paris, France &amp; Montréal, Canada
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
@@ -170,26 +206,26 @@ html(lang='en')
                                 h4.text-uppercase.m-0 Email
                                 hr.my-4.mx-auto
                                 .small.text-black-50
-                                    a(href='#!') hello@yourdomain.com
-                    .col-md-4.mb-3.mb-md-0
-                        .card.py-4.h-100
-                            .card-body.text-center
-                                i.fas.fa-mobile-alt.text-primary.mb-2
-                                h4.text-uppercase.m-0 Phone
-                                hr.my-4.mx-auto
-                                .small.text-black-50 +1 (555) 902-8832
+                                    a(href='#!') info@entalpic.ai
+                    //- .col-md-4.mb-3.mb-md-0
+                    //-     .card.py-4.h-100
+                    //-         .card-body.text-center
+                    //-             i.fas.fa-mobile-alt.text-primary.mb-2
+                    //-             h4.text-uppercase.m-0 Phone
+                    //-             hr.my-4.mx-auto
+                    //-             .small.text-black-50 +1 (555) 902-8832
                 .social.d-flex.justify-content-center
-                    a.mx-2(href='#!')
-                        i.fab.fa-twitter
-                    a.mx-2(href='#!')
-                        i.fab.fa-facebook-f
-                    a.mx-2(href='#!')
-                        i.fab.fa-github
+                    a.mx-2(href='https://x.com/entalpic_ai')
+                        i.fab.fa-x-twitter
+                    a.mx-2(href='https://www.linkedin.com/company/entalpic/')
+                        i.fab.fa-linkedin-in
+                    //- a.mx-2(href='https://github.com/entalpic_ai')
+                    //-     i.fab.fa-github
 
         // Footer
-        footer.footer.bg-black.small.text-center.text-white-50
+        footer.footer.bg-primary.small.text-center.text-white-50
             .container.px-4.px-lg-5
-                | Copyright &copy; Your Website 2023
+                | Copyright &copy; Entalpic 2024
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')

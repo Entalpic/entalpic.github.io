@@ -1,15 +1,27 @@
-// 
+//
 // About
-// 
+//
 
 .about-section {
     padding-top: 10rem;
+    min-height: calc(100vh - 3.5rem);
+    max-height: calc(100vh - 3.5rem);
+    overflow: hidden;
     background: linear-gradient(to bottom,
-        $black 0%,
-        #{fade-out($black, 0.1)} 75%,
-        #{fade-out($black, 0.2)} 100%);
+        $primary 0%,
+        #{fade-out($primary, 0.1)} 75%,
+        #{fade-out($primary, 0.2)} 100%);
 
     p {
-        margin-bottom: 5rem;
+        color: $gray-400;
+    }
+    #brand-about{
+        font-family: $font-family-special;
+    }
+    #get-in-touch{
+        color: $gray-400;
+        &:hover{
+            color: lighten($color: $secondary, $amount: 15%) !important;
+        }
     }
 }

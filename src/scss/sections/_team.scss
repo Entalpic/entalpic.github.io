@@ -1,9 +1,15 @@
-// 
-// Projects
-// 
+//
+// team
+//
 
-.projects-section {
+.team-section {
     padding: 10rem 0;
+    a {
+        color: $primary;
+        &:hover {
+            color: lighten($color: $primary, $amount: 15%) !important;
+        }
+    }
 
     .featured-text {
         padding: 2rem;
@@ -15,11 +21,14 @@
     }
 
     .project-text {
-        padding: 3rem;
+        padding: 1rem;
         font-size: 90%;
 
         @include media-breakpoint-up(lg) {
-            padding: 5rem;
+            padding: 1rem;
         }
+    }
+    .bg-primary {
+        background: $primary;
     }
 }
