@@ -11149,7 +11149,7 @@ body {
 }
 
 .team-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 .team-section a {
   color: #3E1F67;
@@ -11180,6 +11180,13 @@ body {
 }
 .team-section .bg-primary {
   background: #3E1F67;
+}
+
+.research-section .card-title {
+  font-size: 0.9rem;
+}
+.research-section .card-text {
+  font-size: 0.75rem;
 }
 
 .signup-section {
