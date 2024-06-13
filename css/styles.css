@@ -11099,6 +11099,9 @@ body {
   max-width: 20rem;
   font-size: 1rem;
 }
+.masthead .btn {
+  font-weight: bolder;
+}
 .masthead #sub-title {
   opacity: 0.8;
   color: #3E1F67;
@@ -11154,6 +11157,9 @@ body {
 .team-section a:hover {
   color: #6131a2 !important;
 }
+.team-section .btn {
+  font-weight: bolder;
+}
 .team-section .featured-text {
   padding: 2rem;
 }
@@ -11184,6 +11190,9 @@ body {
   background-attachment: scroll;
   background-size: cover;
 }
+.signup-section .btn {
+  font-weight: bolder;
+}
 .signup-section .form-signup input {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
@@ -11197,6 +11206,9 @@ body {
 
 .contact-section {
   padding-top: 5rem;
+}
+.contact-section h4, .contact-section .h4 {
+  font-weight: bolder;
 }
 .contact-section .card {
   border: 0;
