@@ -18,6 +18,24 @@
     background-attachment: scroll;
     background-size: cover;
 
+    #scroll-down{
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1rem;
+        color: $primary;
+        opacity: 0.8;
+        svg {
+            font-size: 2rem;
+        }
+        &:hover{
+            color: $primary;
+            opacity: 1;
+        }
+    }
+
+
     h1 {
         font-family: $font-family-special;
         font-size: 2.5rem;

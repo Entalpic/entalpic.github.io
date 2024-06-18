@@ -37,12 +37,12 @@ html(lang='en')
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
-    body#page-top
+    body#home
 
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
             .container.px-4.px-lg-5
-                a.navbar-brand(href='#page-top') Entalpic
+                a.navbar-brand(href='#home') Entalpic
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars
@@ -55,7 +55,7 @@ html(lang='en')
                         li.nav-item
                             a.nav-link(href='#research') Research
                         li.nav-item
-                            a.nav-link(href='#signup') Contact
+                            a.nav-link(href='#contact') Contact
 
         // Masthead
         header.masthead
@@ -64,9 +64,11 @@ html(lang='en')
                     .text-center
                         h1.mx-auto.my-0.text-uppercase Entalpic
                         h2#sub-title.mx-auto.mt-5.mb-5 AI &amp; materials research for a fair and ecological transition.
-                        a.btn.btn-secondary(href='#about') Learn more
-                        p.mt-5
-                            a(href="#we-are-hiring") (We are hiring!)
+                        //- a.btn.btn-secondary(href='#about') Learn more
+                        //- p.mt-5
+                        //-     a(href="#we-are-hiring") (We are hiring!)
+                        a#scroll-down(href='#about')
+                            i.fas.fa-angle-double-down.fa-3x.text-white-75
 
 
         // About
@@ -79,12 +81,10 @@ html(lang='en')
                             | is in for the long run.
                         .mb-5
 
-                            p Entalpic's mission is to leverage artificial intelligence to accelerate the development of new materials and chemical processes for a fair and ecological transition. We are a team of scientists and engineers with a passion for innovation and sustainability.
+                            p Our mission is to discover new materials and chemical processes that lead to more sustainable practices in sectors where the need for change is most urgent. Specifically, we develop a modern generative AI platform to discover new catalysts that optimize chemical reactions, factoring in physicochemical and manufacturing constraints.
 
-                            p Our goal is to provide the tools and expertise needed to design and optimize materials and chemicals with improved performance and reduced environmental impact. We believe that AI can help us to create a more sustainable future for all.
-
-                            p We are currently in stealth mode but welcome collaborations and partnerships. If you are interested in working with us, please
-                                a(href="#signup")#get-in-touch.text-secondary get in touch
+                            p We are just starting and welcome collaborations and partnerships. If you are interested in working with us, please
+                                a(href="#contact")#get-in-touch.text-secondary get in touch
                                 | !
                 img.img-fluid(src='assets/img/pexels-adrien-olichon-1257089-3137072.jpg', alt='...')
 
@@ -94,19 +94,19 @@ html(lang='en')
                 // Featured Project Row
                 .row.gx-0.mb-4.mb-lg-5.align-items-center
                     .col-xl-6.col-lg-5
-                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/pexels-k-g-13634964-16311421.jpg', alt='...')
+                        img.img-fluid.mb-3.mb-lg-0(src='assets/img/entalpic_founders.jpg', alt='...')
                     .col-xl-6.col-lg-7
                         .featured-text.text-lg-left
                             h4 Founders
                             p.text-black-50.mb-3
                                 a(href="https://www.linkedin.com/in/mgaltier/").mb-3 Mathieu Galtier
-                                | is Entalpic's CEO. With 10 years of experience in startups, including 6 at Owkin, he is passionate about AI and its applications in healthcare and sustainability. He holds a PhD in Maths and Neuroscience and a MSc in Computer Science from the ENS Ulm.
+                                |, CEO. With a PhD in applied math, Mathieu has spent the last decade building teams in startups and biotechs embodying the "Machine Learning for science" deeptech approach.
                             p.text-black-50.mb-3
                                 a(href="https://www.linkedin.com/in/victor-schmidt-30418083/").mb-3 Victor Schmidt
-                                | is Entalpic's CTO. He is a dedicated engineer from École polytechnique (Paris) with a PhD in AI applied to climate change mitigation from Université de Montréal (supervised by Yoshua Bengio).
+                                |, CTO. With a PhD in Machine Learning supervised by Yoshua Bengio, Victor is devoting his engineering skills to contribute to climate change mitigation.
                             p.text-black-50.mb-0
                                 a(href="https://www.linkedin.com/in/alexandre-duval-b00531128/") Alexandre Duval
-                                | is Entalpic's CS(cience)O. He has a renowned experitise in Graph Machine Learning and its applications to materials science. He holds a PhD in Machine Learning from École Centrale Paris &amp; INRIA.
+                                |, CS(cience)O. With a PhD in Machine Learning for chemistry, Alex is passionate about Graph Neural Networks and their applications to materials science.
                 // Project One Row
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
                     .col-lg-6
@@ -115,50 +115,78 @@ html(lang='en')
                         .bg-primary.text-center.h-100.project
                             .d-flex.h-100
                                 .project-text.w-100.my-auto.text-center.text-lg-left
-                                    h4.text-white.mt-3 We are hiring!
-                                    p.mb-3.text-white-15 We are looking for talented individuals to join our team. If you are passionate about AI, sustainability, and innovation, we want to hear from you!
+                                    h2.text-white.mt-3.mb-3 We are hiring!
+                                    p.mb-3.text-white-15 We are looking for talented individuals to join our core team. If you are passionate about AI, chemistry, sustainability, and innovation, we want to hear from you!
 
-                                    p.mb-3.text-white-15 Current positions available: Machine Learning Engineer, Data Scientist, Software Engineer, Research Scientist, and more.
+                                    p.mb-3.text-white-15 Current positions available: ML Engineer, Data Scientist, Material Scientist, Computational Chemist, ML Ops, and more.
 
                                     a.mb-3.btn.btn-secondary(href='https://entalpic.notion.site/Entalpic-is-hiring-9f29b9a69fb840508cd3f9a7c1c0d057') Apply now!
 
-                // Project Two Row
-                .row.gx-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/pexels-adrien-olichon-1257089-3137068.jpg', alt='...')
-                    .col-lg-6.order-lg-first
-                        .bg-primary.text-center.h-100.project
-                            .d-flex.h-100
-                                .project-text.w-100.my-auto.text-center.text-lg-right
-                                    h4.text-white Something else
-                                    p.mb-0.text-white-15
-                                        | Another example of a project with its respective description. These sections work well responsively as well!
+                //- // Project Two Row
+                //- .row.gx-0.justify-content-center
+                //-     .col-lg-6
+                //-         img.img-fluid(src='assets/img/pexels-adrien-olichon-1257089-3137068.jpg', alt='...')
+                //-     .col-lg-6.order-lg-first
+                //-         .bg-primary.text-center.h-100.project
+                //-             .d-flex.h-100
+                //-                 .project-text.w-100.my-auto.text-center.text-lg-right
+                //-                     h4.text-white Something else
+                //-                     p.mb-0.text-white-15
+                //-                         | Another example of a project with its respective description. These sections work well responsively as well!
 
         section#research.research-section.bg-light.pb-5
             .container.px-4.px-lg-5.pb-5
                 h2.text-center.text-uppercase.text-secondary.mb-4.pt-3 Research
-                .row.mb-4
+                .row.mb-4#research-intro
                     p.col-12.text-center.m-auto Here is a list of papers related to Entalpic's research interests.
                     p.col-12.text-center.m-auto Some of them we are authors on, some others are just cool papers we like. Enjoy!
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-lg-6.mb-4
                         .card
-                            .card-body
+                            .card-body.entalpic-paper
                                 h5.card-title
-                                    a(href="https://arxiv.org/abs/2106.03848") Graph Neural Networks for Materials Informatics: Challenges, Applications, and Best Practices
+                                    a(href="https://arxiv.org/abs/2312.07511") A Hitchhiker's Guide to Geometric GNNs for 3D Atomic Systems
                                 p.card-text.text-black-50
-                                    | This paper reviews the state-of-the-art of Graph Neural Networks (GNNs) in materials informatics, focusing on the challenges, applications, and best practices.
+                                    | This paper provides a comprehensive overview of Geometric Graph Neural Networks (GNNs) for modeling 3D atomic systems, highlighting their architectures, applications, and future directions.
                     .col-lg-6.mb-4
                         .card
                             .card-body
                                 h5.card-title
-                                    a(href="https://arxiv.org/abs/2106.03848") Graph Neural Networks for Materials Informatics: Challenges, Applications, and Best Practices
+                                    a(href="https://arxiv.org/abs/2312.03687") MatterGen: a generative model for inorganic materials design
                                 p.card-text.text-black-50
-                                    | This paper reviews the state-of-the-art of Graph Neural Networks (GNNs) in materials informatics, focusing on the challenges, applications, and best practices.
+                                    | This paper introduces a diffusion-based generative model designed to create new inorganic materials by learning and leveraging patterns from existing material datasets.
+                    .col-lg-6.mb-4
+                        .card
+                            .card-body
+                                h5.card-title
+                                    a(href="https://arxiv.org/abs/2010.09435") An Introduction to Electrocatalyst Design using Machine Learning for Renewable Energy Storage
+                                p.card-text.text-black-50
+                                    | This paper explores how machine learning techniques can be applied to design electrocatalysts, aiming to improve renewable energy storage solutions.
+                    .col-lg-6.mb-4
+                        .card
+                            .card-body.entalpic-paper
+                                h5.card-title
+                                    a(href="https://arxiv.org/abs/2305.05577") FAENet: Frame Averaging Equivariant GNN for Materials Modeling
+                                p.card-text.text-black-50
+                                    | This paper presents a fast, simple and expressive Geometric Graph Neural Network that enforces euclidean symmetries via a data projection step instead of model-design equivariant constraints.
+                    .col-lg-6.mb-4
+                        .card
+                            .card-body
+                                h5.card-title
+                                    a(href="https://arxiv.org/abs/2401.00096") A foundation model for atomistic materials chemistry
+                                p.card-text.text-black-50
+                                    | This paper introduces a single general-purpose ML model for atomistic materials chemistry, capable of running stable molecular dynamics on a diverse set of problems in the physical sciences.
+                    .col-lg-6.mb-4
+                        .card
+                            .card-body
+                                h5.card-title
+                                    a(href="https://chemrxiv.org/engage/chemrxiv/article-details/65957d349138d231611ad8f7") Challenges in high-throughput inorganic material prediction and autonomous synthesis
+                                p.card-text.text-black-50
+                                    | This paper discusses problems that can arise in unsupervised materials discovery, and hope that by addressing these, autonomous materials discovery can be brought closer to reality.
 
         // Signup
-        section#signup.signup-section
-            .container.px-4.px-lg-5
+        section#contact.signup-section
+            .container.px-4.px-lg-5.mb-5
                 .row.gx-4.gx-lg-5
                     .col-md-10.col-lg-8.mx-auto.text-center
                         i.far.fa-paper-plane.fa-2x.mb-2.text-white
@@ -173,9 +201,7 @@ html(lang='en')
                         // https://startbootstrap.com/solution/contact-forms
                         // to get an API token!
 
-                        form#contactForm.form-signup(data-sb-form-api-token='API_TOKEN')
-
-                            // Email address input
+                        form#contactForm.form-signup(action="https://formspree.io/f/xknddljy", method="POST")
 
                             .row.input-group-newsletter
                                 .col
@@ -183,46 +209,19 @@ html(lang='en')
                                         type='email',
                                         placeholder='Enter email address...',
                                         aria-label='Enter email address...',
-                                        data-sb-validations='required,email'
+                                        name="email"
                                     )
                                 .col-auto
                                     button#submitButton.btn.btn-secondary.disabled(type='submit') Notify Me!
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:required')
-                                | An email is required.
-                            .invalid-feedback.mt-2(data-sb-feedback='emailAddress:email')
-                                | Email is not valid.
 
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3.mt-2.text-white
-                                    .fw-bolder Form submission successful!
-                                    | To activate this form, sign up at
-                                    br
-                                    a(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3.mt-2 Error sending message!
-
-        // Contact
-        section.contact-section.bg-primary
-            .container.px-4.px-lg-5
-                .row.gx-4.gx-lg-5.justify-content-evenly
+                .row.gx-4.gx-lg-5.justify-content-evenly.mt-5.pt-5
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
                                 i.fas.fa-map-marked-alt.text-primary.mb-2
                                 h4.text-uppercase.m-0 Address
                                 hr.my-4.mx-auto
-                                .small.text-black-50 Paris, France &amp; Montréal, Canada
+                                .small.text-black-50 Paris, France
                     .col-md-4.mb-3.mb-md-0
                         .card.py-4.h-100
                             .card-body.text-center
@@ -230,25 +229,17 @@ html(lang='en')
                                 h4.text-uppercase.m-0 Email
                                 hr.my-4.mx-auto
                                 .small.text-black-50
-                                    a(href='#!') info@entalpic.ai
-                    //- .col-md-4.mb-3.mb-md-0
-                    //-     .card.py-4.h-100
-                    //-         .card-body.text-center
-                    //-             i.fas.fa-mobile-alt.text-primary.mb-2
-                    //-             h4.text-uppercase.m-0 Phone
-                    //-             hr.my-4.mx-auto
-                    //-             .small.text-black-50 +1 (555) 902-8832
-                .social.d-flex.justify-content-center
-                    a.mx-2(href='https://x.com/entalpic_ai')
-                        i.fab.fa-x-twitter
-                    a.mx-2(href='https://www.linkedin.com/company/entalpic/')
-                        i.fab.fa-linkedin-in
-                    //- a.mx-2(href='https://github.com/entalpic_ai')
-                    //-     i.fab.fa-github
+                                    a(href='mailto:info@entalpic.ai') info@entalpic.ai
 
-        // Footer
-        footer.footer.bg-primary.small.text-center.text-white-50
-            .container.px-4.px-lg-5
+            .container.px-4.px-lg-5.mt-5.pt-5
+                .row.gx-4.gx-lg-5.justify-content-center.mb-4
+                    .col-1
+                        a.mx-auto(href='https://x.com/entalpic_ai').text-white
+                            i.fab.fa-x-twitter
+                    .col-1
+                        a.mx-auto(href='https://www.linkedin.com/company/entalpic/').text-white
+                            i.fab.fa-linkedin-in
+            .container.px-4.px-lg-5.text-center.text-white-50.pt-3
                 | Copyright &copy; Entalpic 2024
 
         // Bootstrap core JS
@@ -256,10 +247,3 @@ html(lang='en')
 
         // Core theme JS
         script(src='js/scripts.js')
-
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-        // * *                               SB Forms JS                               * *
-        // * * Activate your form at https://startbootstrap.com/solution/contact-forms * *
-        // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')

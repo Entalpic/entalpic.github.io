@@ -1,49 +1,77 @@
 //
 // Scripts
-// 
+//
 
-window.addEventListener('DOMContentLoaded', event => {
+function isEmailValid(value) {
+  var input = document.createElement("input");
 
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
+  input.type = "email";
+  input.required = true;
+  input.value = value;
 
-    };
+  return typeof input.checkValidity === "function"
+    ? input.checkValidity()
+    : /\S+@\S+\.\S+/.test(value);
+}
 
-    // Shrink the navbar 
-    navbarShrink();
+window.addEventListener("DOMContentLoaded", (event) => {
+  // Navbar shrink function
+  var navbarShrink = function () {
+    const navbarCollapsible = document.body.querySelector("#mainNav");
+    if (!navbarCollapsible) {
+      return;
+    }
+    if (window.scrollY === 0) {
+      navbarCollapsible.classList.remove("navbar-shrink");
+    } else {
+      navbarCollapsible.classList.add("navbar-shrink");
+    }
+  };
 
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
+  // Shrink the navbar
+  navbarShrink();
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
+  // Shrink the navbar when page is scrolled
+  document.addEventListener("scroll", navbarShrink);
 
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
+  // Activate Bootstrap scrollspy on the main nav element
+  const mainNav = document.body.querySelector("#mainNav");
+  if (mainNav) {
+    new bootstrap.ScrollSpy(document.body, {
+      target: "#mainNav",
+      rootMargin: "0px 0px -40%",
     });
+  }
 
+  // Collapse responsive navbar when toggler is visible
+  const navbarToggler = document.body.querySelector(".navbar-toggler");
+  const responsiveNavItems = [].slice.call(
+    document.querySelectorAll("#navbarResponsive .nav-link")
+  );
+  responsiveNavItems.map(function (responsiveNavItem) {
+    responsiveNavItem.addEventListener("click", () => {
+      if (window.getComputedStyle(navbarToggler).display !== "none") {
+        navbarToggler.click();
+      }
+    });
+  });
+  document.querySelector("#emailAddress")?.addEventListener("input", (e) => {
+    const email = e.target.value?.trim();
+    console.log(isEmailValid(email));
+    if (isEmailValid(email)) {
+      const btn = document.querySelector("#submitButton");
+      console.log(btn);
+      btn.disabled = false;
+      btn.classList.remove("disabled");
+    } else {
+      const btn = document.querySelector("#submitButton");
+      btn.disabled = true;
+      btn.classList.add("disabled");
+    }
+  });
+
+  document.querySelectorAll(".entalpic-paper").forEach((element) => {
+    const iconHTML = `<img src="assets/ENTALPIC-DELTA.ico" alt="Entalpic Paper" class="entalpic-paper-icon">`;
+    element.insertAdjacentHTML("afterbegin", iconHTML);
+  });
 });
