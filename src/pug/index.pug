@@ -49,7 +49,7 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item
-                            a.nav-link(href='#about') About
+                            a.nav-link(href='#mission') About
                         li.nav-item
                             a.nav-link(href='#team') Team
                         li.nav-item
@@ -63,21 +63,21 @@ html(lang='en')
                 .d-flex.justify-content-center
                     .text-center
                         h1.mx-auto.my-0.text-uppercase Entalpic
-                        h2#sub-title.mx-auto.mt-5.mb-5 AI &amp; materials research for a fair and ecological transition.
-                        //- a.btn.btn-secondary(href='#about') Learn more
+                        h2#sub-title.mx-auto.mt-5.mb-5 AI-driven materials research for a fair and ecological transition.
+                        //- a.btn.btn-secondary(href='#mission') Learn more
                         //- p.mt-5
                         //-     a(href="#we-are-hiring") (We are hiring!)
-                        a#scroll-down(href='#about')
+                        a#scroll-down(href='#mission')
                             i.fas.fa-angle-double-down.fa-3x.text-white-75
 
 
         // About
-        section#about.about-section.text-center
+        section#mission.mission-section.text-center
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-lg-8
                         h2.text-white.mb-4
-                            span#brand-about Entalpic
+                            span#mission-about Entalpic
                             | is in for the long run.
                         .mb-5
 
@@ -86,7 +86,7 @@ html(lang='en')
                             p We are just starting and welcome collaborations and partnerships. If you are interested in working with us, please
                                 a(href="#contact")#get-in-touch.text-secondary get in touch
                                 | !
-                img.img-fluid(src='assets/img/pexels-adrien-olichon-1257089-3137072.jpg', alt='...')
+                //- img.img-fluid(src='assets/img/pexels-adrien-olichon-1257089-3137072.jpg', alt='...')
 
         // Team
         section#team.team-section.bg-light
@@ -109,8 +109,8 @@ html(lang='en')
                                 |, CS(cience)O. With a PhD in Machine Learning for chemistry, Alex is passionate about Graph Neural Networks and their applications to materials science.
                 // Project One Row
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-lg-6
-                        img.img-fluid(src='assets/img/pexels-ermakov-12083872.jpg', alt='...')
+                    .col-lg-6.position-relative
+                        img#hiring-img.img-fluid(src='assets/img/office.webp', alt='...')
                     .col-lg-6#we-are-hiring
                         .bg-primary.text-center.h-100.project
                             .d-flex.h-100

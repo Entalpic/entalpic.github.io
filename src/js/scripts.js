@@ -57,10 +57,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
   });
   document.querySelector("#emailAddress")?.addEventListener("input", (e) => {
     const email = e.target.value?.trim();
-    console.log(isEmailValid(email));
     if (isEmailValid(email)) {
       const btn = document.querySelector("#submitButton");
-      console.log(btn);
       btn.disabled = false;
       btn.classList.remove("disabled");
     } else {

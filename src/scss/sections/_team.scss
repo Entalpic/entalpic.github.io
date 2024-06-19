@@ -4,6 +4,7 @@
 
 .team-section {
     padding: 5rem 0;
+    min-height: calc(100vh - 3.5rem - 8px);
     a {
         color: $primary;
         &:hover {
@@ -22,6 +23,12 @@
             padding: 0 0 0 2rem;
             border-left: 0.5rem solid $primary;
         }
+    }
+
+    #hiring-img{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .project-text {

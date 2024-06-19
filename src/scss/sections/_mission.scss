@@ -2,10 +2,8 @@
 // About
 //
 
-.about-section {
-    padding-top: 5rem;
-    min-height: calc(100vh - 3.5rem);
-    max-height: calc(100vh - 3.5rem);
+.mission-section {
+    min-height: calc(100vh - 3.5rem - 8px);
     overflow: hidden;
     background: linear-gradient(to bottom,
         $primary 0%,
@@ -15,7 +13,7 @@
     p {
         color: $gray-400;
     }
-    #brand-about{
+    #mission-about{
         font-family: $font-family-special;
     }
     #get-in-touch{
