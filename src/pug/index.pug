@@ -5,32 +5,34 @@ html(lang='en')
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='description', content="Entalpic's mission is to discover new materials and chemical processes that lead to more sustainable practices in sectors where the need for change is most urgent.")
+        meta(name='author', content='Entalpic')
         //- Facebook Open Graph Meta Data
         meta(property="og:url", content="https://entalpic.ai")
         meta(property="og:type", content="website")
-        meta(property="og:title", content="Entalpic - AI for Chemistry & Materials")
-        meta(property="og:description", content="Entalpic's mission is to leverage artificial intelligence to accelerate the development of new materials and chemical processes for a fair and ecological transition.")
+        meta(property="og:title", content="Entalpic - AI-driven materials research for a fair and ecological transition.")
+        meta(property="og:description", content="Entalpic's mission is to discover new materials and chemical processes that lead to more sustainable practices in sectors where the need for change is most urgent.")
         meta(property="og:image", itemprop="image", content="https://github.com/Entalpic/entalpic.github.io/blob/main/src/assets/img/og-card.jpeg?raw=true")
 
         //- Twitter Meta Data
         meta(name="twitter:card", content="summary_large_image")
-        meta(name="twitter:site", content="@entalpic")
+        meta(name="twitter:site", content="@entalpic_ai")
         meta(name="twitter:creator", content="")
-        meta(name="twitter:title", content="Entalpic - AI for Chemistry & Materials")
-        meta(name="twitter:description", content="Entalpic's mission is to leverage artificial intelligence to accelerate the development of new materials and chemical processes for a fair and ecological transition.")
+        meta(name="twitter:title", content="Entalpic - AI-driven materials research for a fair and ecological transition.")
+        meta(name="twitter:description", content="Entalpic's mission is to discover new materials and chemical processes that lead to more sustainable practices in sectors where the need for change is most urgent.")
         meta(name="twitter:image", content="https://github.com/Entalpic/entalpic.github.io/blob/main/src/assets/img/og-card.jpeg?raw=true")
 
-        title Entalpic - AI for Chemistry &amp; Materials
+        title Entalpic - AI-driven materials research for a fair and ecological transition.
 
-        link(rel='icon', type='image/x-icon', href='assets/ENTALPIC-DELTA.ico')
+        link(rel='icon', href='assets/Entalpic.svg')
+        link(rel='mask-icon', href='assets/Entalpic.svg', color='#000000')
+
 
         // Font Awesome icons (free version)
         script(src='https://use.fontawesome.com/releases/v6.5.0/js/all.js', crossorigin='anonymous')
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Varela+Round', rel='stylesheet')
+        //- link(href='https://fonts.googleapis.com/css?family=Varela+Round', rel='stylesheet')
         link(href='https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap', rel='stylesheet')
 
 
@@ -49,7 +51,7 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto
                         li.nav-item
-                            a.nav-link(href='#mission') About
+                            a.nav-link(href='#mission') Mission
                         li.nav-item
                             a.nav-link(href='#team') Team
                         li.nav-item
@@ -72,18 +74,20 @@ html(lang='en')
 
 
         // About
-        section#mission.mission-section.text-center
+        section#mission.mission-section.text-center.d-flex.align-items-center
             .container.px-4.px-lg-5
                 .row.gx-4.gx-lg-5.justify-content-center
                     .col-lg-8
-                        h2.text-white.mb-4
+                        h2.text-white.mb-5
                             span#mission-about Entalpic
                             | is in for the long run.
-                        .mb-5
+                        div
 
-                            p Our mission is to discover new materials and chemical processes that lead to more sustainable practices in sectors where the need for change is most urgent. Specifically, we develop a modern generative AI platform to discover new catalysts that optimize chemical reactions, factoring in physicochemical and manufacturing constraints.
+                            p Our mission is to discover new materials and chemical processes that lead to more sustainable practices in sectors where the need for change is most urgent.
 
-                            p We are just starting and welcome collaborations and partnerships. If you are interested in working with us, please
+                            p Specifically, we develop a modern generative AI platform to discover new catalysts that optimize chemical reactions, factoring in physicochemical and manufacturing constraints.
+
+                            p.mb-0 We are just starting and welcome collaborations and partnerships. If you are interested in working with us, please
                                 a(href="#contact")#get-in-touch.text-secondary get in touch
                                 | !
                 //- img.img-fluid(src='assets/img/pexels-adrien-olichon-1257089-3137072.jpg', alt='...')
@@ -109,7 +113,7 @@ html(lang='en')
                                 |, CS(cience)O. With a PhD in Machine Learning for chemistry, Alex is passionate about Graph Neural Networks and their applications to materials science.
                 // Project One Row
                 .row.gx-0.mb-5.mb-lg-0.justify-content-center
-                    .col-lg-6.position-relative
+                    .col-lg-6.d-flex.align-items-center
                         img#hiring-img.img-fluid(src='assets/img/office.webp', alt='...')
                     .col-lg-6#we-are-hiring
                         .bg-primary.text-center.h-100.project

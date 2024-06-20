@@ -11,7 +11,11 @@
         #{fade-out($primary, 0.2)} 100%);
 
     p {
-        color: $gray-400;
+        color: $gray-300;
+        font-size: 1.2rem;
+    }
+    h2 {
+        font-size: 2.5rem;
     }
     #mission-about{
         font-family: $font-family-special;
