@@ -60,18 +60,27 @@ window.addEventListener("DOMContentLoaded", (event) => {
       }
     });
   });
-  document.querySelector("#emailAddress")?.addEventListener("input", (e) => {
-    const email = e.target.value?.trim();
-    if (isEmailValid(email)) {
-      const btn = document.querySelector("#submitButton");
-      btn.disabled = false;
-      btn.classList.remove("disabled");
-    } else {
-      const btn = document.querySelector("#submitButton");
-      btn.disabled = true;
-      btn.classList.add("disabled");
-    }
-  });
+  document
+    .querySelectorAll("#contactForm input,#contactForm textarea")
+    .forEach((n) => {
+      n.addEventListener("input", (e) => {
+        const email = document.getElementById("emailAddress").value;
+        const emailOk = isEmailValid(email);
+
+        const name = document.getElementById("nameInput").value;
+        const nameOk = name.length > 1;
+
+        if (emailOk && nameOk) {
+          const btn = document.querySelector("#submitButton");
+          btn.disabled = false;
+          btn.classList.remove("disabled");
+        } else {
+          const btn = document.querySelector("#submitButton");
+          btn.disabled = true;
+          btn.classList.add("disabled");
+        }
+      });
+    });
 
   document.querySelectorAll(".entalpic-paper").forEach((element) => {
     const iconHTML = `<img src="assets/ENTALPIC-DELTA.ico" alt="Entalpic Paper" class="entalpic-paper-icon">`;
