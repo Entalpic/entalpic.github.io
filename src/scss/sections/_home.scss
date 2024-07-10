@@ -1,0 +1,128 @@
+//
+// Masthead
+//
+html {
+  background: #18132d;
+}
+.masthead {
+  min-height: 100vh;
+  min-width: 100vw;
+  padding-bottom: $footer-height !important;
+  background-image: linear-gradient(
+    to right bottom,
+    #3e1f67,
+    #3a1d60,
+    #361b59,
+    #321952,
+    #2e174b,
+    #281644,
+    #23153d,
+    #1e1436,
+    #18132d,
+    #141123,
+    #100f19,
+    #0b0b0d
+  );
+  #logo {
+    max-width: 100%;
+    margin-top: 5rem;
+  }
+  .btn {
+    transition: all ease 0.25s;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  #talk-to-entalpic:hover {
+    background-color: lighten($secondary, 10%) !important;
+  }
+  #press-release:hover {
+    background-color: lighten($primary, 10%) !important;
+  }
+  #home-row {
+    max-width: 70%;
+  }
+
+  #scroll-down {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    color: $primary;
+    opacity: 0.8;
+    svg {
+      font-size: 2rem;
+    }
+    &:hover {
+      color: $primary;
+      opacity: 1;
+    }
+  }
+
+  h2 {
+    max-width: 20rem;
+    font-size: 1.8rem;
+    color: white !important;
+    padding-bottom: 1.5rem;
+  }
+  .mission-text {
+    color: white;
+    opacity: 0.85;
+    font-weight: 250;
+    max-width: 900px;
+    font-size: 1.1rem;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .btn {
+    font-weight: bolder;
+  }
+
+  #sub-title {
+    font-weight: 200;
+  }
+
+  @include media-breakpoint-down(lg) {
+    #home-row {
+      max-width: 75%;
+    }
+    padding-bottom: $footer-md-height !important;
+  }
+  @include media-breakpoint-down(md) {
+    padding-bottom: $footer-sm-height !important;
+
+    .home-btn-col {
+      justify-content: center !important;
+    }
+    #home-row {
+      max-width: 90% !important;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    h2 {
+      max-width: 80%;
+      font-size: 2.5rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 100vh;
+    padding: 0;
+
+    #logo {
+      max-width: 80%;
+    }
+
+    h2 {
+      max-width: 75%;
+      font-size: 3.25rem;
+    }
+  }
+  input {
+    background-color: rgba(19, 21, 44);
+  }
+}

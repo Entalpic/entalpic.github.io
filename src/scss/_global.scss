@@ -7,14 +7,19 @@
 //
 // https://caniuse.com/?search=scroll-padding
 
-html {
-    scroll-padding-top: calc(4.5rem - 1px);
+body {
+  letter-spacing: $base-letter-spacing;
 }
 
+html,
 body {
-    letter-spacing: $base-letter-spacing;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .text-white-15 {
-    color: fade-out($white, 0.15);
+  color: fade-out($white, 0.15);
+}
+.text-white-25 {
+  color: fade-out($white, 0.25);
 }

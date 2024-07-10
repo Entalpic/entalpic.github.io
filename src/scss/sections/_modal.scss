@@ -1,0 +1,113 @@
+#contactModal {
+  background-image: linear-gradient(
+    to right top,
+    #12082540,
+    #10062340,
+    #0e042040,
+    #0c021e40,
+    #09001c40
+  );
+  color: white;
+  backdrop-filter: blur(40px);
+  #contactModalLabel {
+    font-weight: 200;
+  }
+  #hireButton {
+    // max-width: 250px;
+    // font-weight: bold;
+    font-size: 1rem;
+    transition: all ease 0.25s;
+    &:hover {
+      transform: scale(1.05);
+    }
+    width: inherit;
+    text-decoration: none;
+    font-style: italic !important;
+  }
+  #modal-mission {
+    font-weight: 200;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  .modal-content {
+    background-image: linear-gradient(
+      to right bottom,
+      #1c0b30,
+      #211337,
+      #291748,
+      #271943,
+      #382076
+    );
+    border-radius: 8px;
+    border: 1px solid $secondary;
+    box-shadow: #674b9e36 0px 0px 34px 18px;
+  }
+  .form-signup {
+    input,
+    textarea {
+      box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+      padding: 1.25rem 2rem;
+      height: auto;
+      font-family: $font-family-special;
+      font-size: 80%;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      border: 0;
+      //   background-color: rgb(19, 21, 44) !important;
+    }
+  }
+  button.disabled {
+    background-color: darken($secondary, 30%);
+  }
+  a.contact-icons {
+    color: $secondary !important;
+    svg {
+      height: 20px;
+    }
+    transition: all ease 0.15s;
+    &:hover {
+      color: lighten($secondary, 20%);
+      transform: scale(1.1);
+    }
+  }
+
+  .close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.5;
+    transition: all ease 0.25s;
+    &:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    &:before,
+    &:after {
+      position: absolute;
+      left: 15px;
+      content: " ";
+      height: 22px;
+      width: 1px;
+      background-color: lighten($primary, 30%);
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+.modal-footer {
+  border: none !important;
+}
+.modal-header {
+  border: none !important;
+}
+.btn-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}

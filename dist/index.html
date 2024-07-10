@@ -20,223 +20,93 @@
         <link rel="icon" href="assets/Entalpic.svg" />
         <link rel="mask-icon" href="assets/Entalpic.svg" color="#000000" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.5.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v6.5.2/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body id="home">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#home">Entalpic</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-                <div class="d-flex justify-content-center">
-                    <div class="text-center">
-                        <h1 class="mx-auto my-0 text-uppercase">Entalpic</h1>
-                        <h2 class="mx-auto mt-5 mb-5" id="sub-title">AI-driven materials research for a fair and ecological transition.</h2>
-                        <a id="scroll-down" href="#mission"><i class="fas fa-angle-double-down fa-3x text-white-75"></i></a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- About-->
-        <section class="mission-section text-center d-flex align-items-center" id="mission">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="text-white mb-5">
-                            <span id="mission-about">Entalpic</span>
-                            is in for the long run.
-                        </h2>
-                        <div>
-                            <p>Our mission is to discover new materials and chemical processes that lead to more sustainable practices in sectors where the need for change is most urgent.</p>
-                            <p>Specifically, we develop a modern generative AI platform to discover new catalysts that optimize chemical reactions, factoring in physicochemical and manufacturing constraints.</p>
-                            <p class="mb-0">
-                                We are just starting and welcome collaborations and partnerships. If you are interested in working with us, please
-                                <a class="text-secondary" href="#contact" id="get-in-touch">get in touch</a>
-                                !
-                            </p>
+    <body>
+        <div class="position-relative">
+            <div class="masthead container d-flex align-items-stretch justify-content-center">
+                <div class="row d-flex justify-content-center align-items-center" id="home-row">
+                    <div class="col-12 text-center mb-xs-5 mb-lg-0 mb-xs-5 mb-lg-0 py-5"><img id="logo" src="assets/img/Logo - White-cropped.svg" /></div>
+                    <div class="col-12 text-center mb-xs-5 mb-lg-0"><h2 class="mx-auto mt-4 mb-4" id="sub-title">AI-driven materials design for a sustainable world</h2></div>
+                    <div class="col-12 text-center mb-xs-5 mb-lg-0"><p class="mission-text">The chemical industry must innovate with more sustainable materials and chemical processes. We have developed a generative AI platform that helps discover new catalysts that optimize for the right chemical reactions, all while factoring in physicochemical and manufacturing constraints.</p></div>
+                    <div class="col-12 text-center mb-xs-5 mb-lg-0"><p class="mission-text">We welcome collaborations, partnerships, and new teammates. If you are interested in working together, please get in touch. We are just getting started!</p></div>
+                    <div class="col-12 mt-5 mb-xs-5 mb-lg-0">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 col-8 d-flex justify-content-end align-items-center home-btn-col mb-4 mb-md-0"><a class="btn btn-primary" id="press-release" href="#press-release">Press release</a></div>
+                            <div class="col-md-6 col-8 d-flex justify-content-start align-items-center home-btn-col"><button class="btn btn-secondary" id="talk-to-entalpic" type="button" data-bs-toggle="modal" data-bs-target="#contactModal">Talk to Entalpic</button></div>
                         </div>
                     </div>
+                    <div class="col-12 text-center mb-xs-5 mb-lg-0"></div>
                 </div>
             </div>
-        </section>
-        <!-- Team-->
-        <section class="team-section bg-light" id="team">
-            <div class="container px-4 px-lg-5">
-                <!-- Featured Project Row-->
-                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-6 col-lg-5"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/entalpic_founders.jpg" alt="..." /></div>
-                    <div class="col-xl-6 col-lg-7">
-                        <div class="featured-text text-lg-left">
-                            <h4>Founders</h4>
-                            <p class="text-black-50 mb-3">
-                                <a class="mb-3" href="https://www.linkedin.com/in/mgaltier/">Mathieu Galtier</a>
-                                , CEO. With a PhD in applied math, Mathieu has spent the last decade building teams in startups and biotechs embodying the "Machine Learning for science" deeptech approach.
-                            </p>
-                            <p class="text-black-50 mb-3">
-                                <a class="mb-3" href="https://www.linkedin.com/in/victor-schmidt-30418083/">Victor Schmidt</a>
-                                , CTO. With a PhD in Machine Learning supervised by Yoshua Bengio, Victor is devoting his engineering skills to contribute to climate change mitigation.
-                            </p>
-                            <p class="text-black-50 mb-0">
-                                <a href="https://www.linkedin.com/in/alexandre-duval-b00531128/">Alexandre Duval</a>
-                                , CS(cience)O. With a PhD in Machine Learning for chemistry, Alex is passionate about Graph Neural Networks and their applications to materials science.
-                            </p>
-                        </div>
+            <div class="footer d-flex align-items-center">
+                <div class="row justify-content-center w-100 pt-5">
+                    <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+                        <a class="mx-auto text-primary brand-icons" href="https://https://www.breega.com/" target="_blank" rel="noopener noreferrer"><img src="assets/img/breega logo.png" /></a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+                        <a class="mx-auto text-primary brand-icons" href="https://https://www.felicis.com/" target="_blank" rel="noopener noreferrer"><img src="assets/img/felicis logo.png" /></a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+                        <a class="mx-auto text-primary brand-icons" href="https://cathayinnovation.com" target="_blank" rel="noopener noreferrer"><img src="assets/img/cathay logo.png" /></a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+                        <a class="mx-auto text-primary brand-icons" href="https://https://mila.quebec/" target="_blank" rel="noopener noreferrer"><img src="assets/img/mila logo.png" /></a>
+                    </div>
+                    <div class="col-6 col-sm-4 col-lg-2 d-flex justify-content-center">
+                        <a class="mx-auto text-primary brand-icons" href="https://https://21st.centralesupelec.com/" target="_blank" rel="noopener noreferrer"><img src="assets/img/centrale logo.png" /></a>
                     </div>
                 </div>
-                <!-- Project One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6 d-flex align-items-center"><img class="img-fluid" id="hiring-img" src="assets/img/office.webp" alt="..." /></div>
-                    <div class="col-lg-6" id="we-are-hiring">
-                        <div class="bg-primary text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h2 class="text-white mt-3 mb-3">We are hiring!</h2>
-                                    <p class="mb-3 text-white-15">We are looking for talented individuals to join our core team. If you are passionate about AI, chemistry, sustainability, and innovation, we want to hear from you!</p>
-                                    <p class="mb-3 text-white-15">Current positions available: ML Engineer, Data Scientist, Material Scientist, Computational Chemist, ML Ops, and more.</p>
-                                    <a class="mb-3 btn btn-secondary" href="https://entalpic.notion.site/Entalpic-is-hiring-9f29b9a69fb840508cd3f9a7c1c0d057">Apply now!</a>
+            </div>
+        </div>
+        <!-- Modal-->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content p-5">
+                    <div class="modal-header">
+                        <a class="close" type="button" data-bs-dismiss="modal" aria-label="Close"></a>
+                        <h1 class="mb-4 modal-title" id="contactModalLabel">Talk to Entalpic</h1>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-signup mb-5" id="contactForm" action="https://formspree.io/f/xknddljy" method="POST">
+                            <div class="row input-group-newsletter justify-content-center">
+                                <div class="col-md-12 col-lg-6 pb-4"><input class="form-control" id="emailAddress" type="email" placeholder="Email address" aria-label="Email address" name="email" required /></div>
+                                <div class="col-md-12 col-lg-6 pb-4"><input class="form-control" id="nameInput" type="text" placeholder="Name" aria-label="Name" name="name" required /></div>
+                                <div class="col-md-12 col-lg-9 pb-4 pb-lg-0"><textarea class="form-control" id="textInput" type="text" placeholder="Message for us" aria-label="Message for us" name="message" required rows="1"></textarea></div>
+                                <div class="col-lg-3 col-6 d-flex justify-content-center">
+                                    <button class="btn btn-secondary disabled" id="submitButton" type="submit">
+                                        Send
+                                        <i class="far fa-paper-plane"></i>
+                                    </button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="research-section bg-light pb-5" id="research">
-            <div class="container px-4 px-lg-5 pb-5">
-                <h2 class="text-center text-uppercase text-secondary mb-4 pt-3">Research</h2>
-                <div class="row mb-4" id="research-intro">
-                    <p class="col-12 text-center m-auto">Here is a list of papers related to Entalpic's research interests.</p>
-                    <p class="col-12 text-center m-auto">Some of them we are authors on, some others are just cool papers we like. Enjoy!</p>
-                </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-6 mb-4">
-                        <div class="card">
-                            <div class="card-body entalpic-paper">
-                                <h5 class="card-title"><a href="https://arxiv.org/abs/2312.07511">A Hitchhiker's Guide to Geometric GNNs for 3D Atomic Systems</a></h5>
-                                <p class="card-text text-black-50">This paper provides a comprehensive overview of Geometric Graph Neural Networks (GNNs) for modeling 3D atomic systems, highlighting their architectures, applications, and future directions.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="https://arxiv.org/abs/2312.03687">MatterGen: a generative model for inorganic materials design</a></h5>
-                                <p class="card-text text-black-50">This paper introduces a diffusion-based generative model designed to create new inorganic materials by learning and leveraging patterns from existing material datasets.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="https://arxiv.org/abs/2010.09435">An Introduction to Electrocatalyst Design using Machine Learning for Renewable Energy Storage</a></h5>
-                                <p class="card-text text-black-50">This paper explores how machine learning techniques can be applied to design electrocatalysts, aiming to improve renewable energy storage solutions.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="card">
-                            <div class="card-body entalpic-paper">
-                                <h5 class="card-title"><a href="https://arxiv.org/abs/2305.05577">FAENet: Frame Averaging Equivariant GNN for Materials Modeling</a></h5>
-                                <p class="card-text text-black-50">This paper presents a fast, simple and expressive Geometric Graph Neural Network that enforces euclidean symmetries via a data projection step instead of model-design equivariant constraints.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="https://arxiv.org/abs/2401.00096">A foundation model for atomistic materials chemistry</a></h5>
-                                <p class="card-text text-black-50">This paper introduces a single general-purpose ML model for atomistic materials chemistry, capable of running stable molecular dynamics on a diverse set of problems in the physical sciences.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="https://chemrxiv.org/engage/chemrxiv/article-details/65957d349138d231611ad8f7">Challenges in high-throughput inorganic material prediction and autonomous synthesis</a></h5>
-                                <p class="card-text text-black-50">This paper discusses problems that can arise in unsupervised materials discovery, and hope that by addressing these, autonomous materials discovery can be brought closer to reality.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Signup-->
-        <section class="signup-section" id="contact">
-            <div class="container px-4 px-lg-5 mb-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-signup" id="contactForm" action="https://formspree.io/f/xknddljy" method="POST">
-                            <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." name="email" /></div>
-                                <div class="col-auto"><button class="btn btn-secondary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                            </div>
                         </form>
-                    </div>
-                </div>
-                <div class="row gx-4 gx-lg-5 justify-content-evenly mt-5 pt-5">
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">Paris, France</div>
-                            </div>
+                        <div class="row gx-4 gx-lg-5 d-flex justify-content-center mt-5">
+                            <a class="text-white" id="hireButton" href="https://entalpic.notion.site/Entalpic-is-hiring-9f29b9a69fb840508cd3f9a7c1c0d057" target="_blank" rel="noopener noreferrer">
+                                We are hiring
+                                <i class="fas fa-square-up-right"></i>
+                            </a>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
-                                <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50"><a href="mailto:info@entalpic.ai">info@entalpic.ai</a></div>
+                        <div class="row gx-4 gx-lg-5 justify-content-center mt-5">
+                            <div class="col-1 d-flex justify-content-center mx-3">
+                                <a class="mx-auto text-primary contact-icons" href="https://x.com/entalpic_ai" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-center mx-3">
+                                <a class="mx-auto text-primary contact-icons" href="https://www.linkedin.com/company/entalpic/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="col-1 d-flex justify-content-center mx-3">
+                                <a class="mx-auto text-primary contact-icons" href="mailto:info@entalpic.ai" target="_blank" rel="noopener noreferrer"><i class="far fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container px-4 px-lg-5 mt-5 pt-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center mb-4">
-                    <div class="col-1">
-                        <a class="mx-auto text-white" href="https://x.com/entalpic_ai"><i class="fab fa-x-twitter"></i></a>
-                    </div>
-                    <div class="col-1">
-                        <a class="mx-auto text-white" href="https://www.linkedin.com/company/entalpic/"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="container px-4 px-lg-5 text-center text-white-50 pt-3">Copyright &copy; Entalpic 2024</div>
-        </section>
+        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

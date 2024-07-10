@@ -1,7 +1,28 @@
-// 
+//
 // Footer
-// 
+//
 
 .footer {
-    padding: 5rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  .brand-icons {
+    img {
+      height: 30px;
+      -webkit-filter: grayscale(100%) brightness(5000%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%) brightness(5000%);
+      opacity: 40%;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    height: $footer-md-height !important;
+  }
+  @include media-breakpoint-down(md) {
+    height: $footer-sm-height !important;
+    .brand-icons img {
+      padding-bottom: 24px;
+      height: 50px;
+    }
+  }
 }
