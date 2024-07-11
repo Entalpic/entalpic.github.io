@@ -101,6 +101,11 @@ html {
       max-width: 90% !important;
     }
   }
+  @include media-breakpoint-down(sm) {
+    .mission-text {
+      font-size: 0.95rem;
+    }
+  }
 
   @include media-breakpoint-up(md) {
     h2 {
