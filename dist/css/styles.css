@@ -11127,11 +11127,11 @@ html {
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
   font-size: 1.8rem;
-  color: white !important;
+  color: rgb(230, 230, 230) !important;
   padding-bottom: 1.5rem;
 }
 .masthead .mission-text {
-  color: white;
+  color: rgb(220, 220, 220);
   opacity: 0.85;
   font-weight: 250;
   max-width: 900px;
@@ -11164,6 +11164,9 @@ html {
   .masthead #home-row {
     max-width: 90% !important;
   }
+  .masthead #logo {
+    margin-top: 3rem;
+  }
 }
 @media (max-width: 575.98px) {
   .masthead .mission-text {
@@ -11194,10 +11197,10 @@ html {
 }
 
 #contactModal {
-  background-image: linear-gradient(to right top, rgba(18, 8, 37, 0.2509803922), rgba(16, 6, 35, 0.2509803922), rgba(14, 4, 32, 0.2509803922), rgba(12, 2, 30, 0.2509803922), rgba(9, 0, 28, 0.2509803922));
+  background-image: linear-gradient(to right top, rgba(18, 8, 37, 0.2705882353), rgba(16, 6, 35, 0.2705882353), rgba(14, 4, 32, 0.2705882353), rgba(12, 2, 30, 0.2705882353), rgba(9, 0, 28, 0.2705882353));
   color: white;
-  -webkit-backdrop-filter: blur(40px);
-          backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
 }
 #contactModal #contactModalLabel {
   font-weight: 200;

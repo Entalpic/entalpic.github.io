@@ -63,11 +63,11 @@ html {
   h2 {
     max-width: 20rem;
     font-size: 1.8rem;
-    color: white !important;
+    color: rgb(230, 230, 230) !important;
     padding-bottom: 1.5rem;
   }
   .mission-text {
-    color: white;
+    color: rgb(220, 220, 220);
     opacity: 0.85;
     font-weight: 250;
     max-width: 900px;
@@ -99,6 +99,9 @@ html {
     }
     #home-row {
       max-width: 90% !important;
+    }
+    #logo {
+      margin-top: 3rem;
     }
   }
   @include media-breakpoint-down(sm) {
