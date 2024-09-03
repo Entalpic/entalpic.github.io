@@ -25,19 +25,33 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TY8ZMZVV9"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'G-2TY8ZMZVV9');
-            console.log('Analytics.');
+        <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+        <script type="text/javascript" charset="UTF-8">
+            document.addEventListener('DOMContentLoaded', function () {
+                cookieconsent.run({ notice_banner_type: 'simple', consent_type: 'express', palette: 'light', language: 'en', page_load_consent_levels: ['strictly-necessary'], notice_banner_reject_button_hide: false, preferences_center_close_button_hide: false, page_refresh_confirmation_buttons: false, website_name: 'Entalpic' });
+            });
         </script>
+        <!-- Google Analytics-->
+        <!-- Google tag (gtag.js)-->
+        <script type="text/plain" data-cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-2TY8ZMZVV9"></script>
+        <script type="text/plain" data-cookie-consent="tracking">
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-2TY8ZMZVV9');
+            console.log("Analytics On.")
+        </script>
+        <!-- end of Google Analytics-->
+        <noscript>
+            Free cookie consent management tool by
+            <a href="https://www.termsfeed.com/">TermsFeed</a>
+        </noscript>
+        <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com-->
     </head>
     <body>
         <div class="position-relative">
+            <a href="#" id="open_preferences_center" title="Open Cookie Preferences"><i class="fas fa-cookie"></i></a>
             <div class="masthead container d-flex align-items-stretch justify-content-center">
                 <div class="row d-flex justify-content-center align-items-center" id="home-row">
                     <div class="col-12 text-center mb-xs-5 mb-lg-0 mb-xs-5 mb-lg-0 py-5"><img id="logo" src="assets/img/Logo - White-cropped.svg" /></div>
