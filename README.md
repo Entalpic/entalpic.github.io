@@ -31,5 +31,6 @@ You must have npm installed in order to use this build environment.
 ### Deploy
 
 ```bash
+npm run build
 git subtree push --prefix dist origin gh-pages
 ```
