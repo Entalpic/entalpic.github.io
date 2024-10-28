@@ -2,7 +2,7 @@
 // Scripts
 //
 
-function isEmailValid(value) {
+const isEmailValid = (value) => {
     var input = document.createElement("input");
 
     input.type = "email";
@@ -12,7 +12,7 @@ function isEmailValid(value) {
     return typeof input.checkValidity === "function"
         ? input.checkValidity()
         : /\S+@\S+\.\S+/.test(value);
-}
+};
 
 window.addEventListener("DOMContentLoaded", (event) => {
     // Navbar shrink function
