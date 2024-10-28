@@ -137,6 +137,11 @@ html(lang='en')
                                         required,
                                         rows=1,
                                     )
+                                    input#sourceInput(
+                                        type="hidden",
+                                        name="source",
+                                        value="website"
+                                    )
                                 .col-lg-3.col-6.d-flex.justify-content-center
                                     button#submitButton.btn.btn-secondary.disabled(type='submit')
                                         |Send

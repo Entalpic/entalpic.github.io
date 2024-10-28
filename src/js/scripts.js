@@ -50,6 +50,15 @@ const getSource = () => {
     return "";
 };
 
+const setSource = ({ debug = false }) => {
+    const source = getSource();
+    const sourceElement = document.querySelector("#sourceInput");
+    sourceElement.value = source;
+    if (debug) {
+        console.log("Source: ", source);
+    }
+};
+
 window.addEventListener("DOMContentLoaded", (event) => {
     // Navbar shrink function
     var navbarShrink = function () {
@@ -105,6 +114,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
                     const btn = document.querySelector("#submitButton");
                     btn.disabled = false;
                     btn.classList.remove("disabled");
+                    setSource({ debug: true });
                 } else {
                     const btn = document.querySelector("#submitButton");
                     btn.disabled = true;
