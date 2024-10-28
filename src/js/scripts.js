@@ -54,7 +54,7 @@ const getSource = () => {
     return "";
 };
 
-const setSource = ({ debug = false }) => {
+const setSource = ({ debug = false } = {}) => {
     const source = getSource();
     const sourceElement = document.querySelector("#sourceInput");
     sourceElement.value = source;
