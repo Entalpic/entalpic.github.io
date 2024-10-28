@@ -42,6 +42,10 @@ const decrypt = (salt, encoded) => {
 };
 
 const getSource = () => {
+    const existingSource = document.querySelector("#sourceInput").value;
+    if (existingSource) {
+        return existingSource;
+    }
     const url = new URL(window.location.href);
     const src = url.searchParams.get("src");
     if (src) {
@@ -114,7 +118,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
                     const btn = document.querySelector("#submitButton");
                     btn.disabled = false;
                     btn.classList.remove("disabled");
-                    setSource({ debug: true });
+                    setSource();
                 } else {
                     const btn = document.querySelector("#submitButton");
                     btn.disabled = true;
@@ -127,4 +131,5 @@ window.addEventListener("DOMContentLoaded", (event) => {
         const iconHTML = `<img src="assets/ENTALPIC-DELTA.ico" alt="Entalpic Paper" class="entalpic-paper-icon">`;
         element.insertAdjacentHTML("afterbegin", iconHTML);
     });
+    setSource();
 });
