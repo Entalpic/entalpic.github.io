@@ -14,6 +14,42 @@ const isEmailValid = (value) => {
         : /\S+@\S+\.\S+/.test(value);
 };
 
+const crypt = (salt, text) => {
+    // https://stackoverflow.com/a/66938952
+    const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0));
+    const byteHex = (n) => ("0" + Number(n).toString(16)).substr(-2);
+    const applySaltToChar = (code) =>
+        textToChars(salt).reduce((a, b) => a ^ b, code);
+
+    return text
+        .split("")
+        .map(textToChars)
+        .map(applySaltToChar)
+        .map(byteHex)
+        .join("");
+};
+
+const decrypt = (salt, encoded) => {
+    const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0));
+    const applySaltToChar = (code) =>
+        textToChars(salt).reduce((a, b) => a ^ b, code);
+    return encoded
+        .match(/.{1,2}/g)
+        .map((hex) => parseInt(hex, 16))
+        .map(applySaltToChar)
+        .map((charCode) => String.fromCharCode(charCode))
+        .join("");
+};
+
+const getSource = () => {
+    const url = new URL(window.location.href);
+    const src = url.searchParams.get("src");
+    if (src) {
+        return decrypt("entalpic", src);
+    }
+    return "";
+};
+
 window.addEventListener("DOMContentLoaded", (event) => {
     // Navbar shrink function
     var navbarShrink = function () {
