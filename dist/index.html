@@ -99,7 +99,10 @@
                             <div class="row input-group-newsletter justify-content-center">
                                 <div class="col-md-12 col-lg-6 pb-4"><input class="form-control" id="emailAddress" type="email" placeholder="Email address" aria-label="Email address" name="email" required /></div>
                                 <div class="col-md-12 col-lg-6 pb-4"><input class="form-control" id="nameInput" type="text" placeholder="Name" aria-label="Name" name="name" required /></div>
-                                <div class="col-md-12 col-lg-9 pb-4 pb-lg-0"><textarea class="form-control" id="textInput" type="text" placeholder="Message for us" aria-label="Message for us" name="message" required rows="1"></textarea></div>
+                                <div class="col-md-12 col-lg-9 pb-4 pb-lg-0">
+                                    <textarea class="form-control" id="textInput" type="text" placeholder="Message for us" aria-label="Message for us" name="message" required rows="1"></textarea>
+                                    <input id="sourceInput" type="hidden" name="source" value="" />
+                                </div>
                                 <div class="col-lg-3 col-6 d-flex justify-content-center">
                                     <button class="btn btn-secondary disabled" id="submitButton" type="submit">
                                         Send
