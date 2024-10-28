@@ -2,6 +2,22 @@
 // Scripts
 //
 
+const dispatch = ({ event = "click", target } = {}) => {
+    const newEvent = new Event(event);
+    if (typeof target === "string") {
+        target = document.querySelector(target);
+    }
+    target.dispatchEvent(newEvent);
+};
+
+const openFormModalOnGetParams = () => {
+    const url = new URL(window.location.href);
+    const modal = url.searchParams.get("form");
+    if (modal && modal === "on") {
+        dispatch({ target: "#talk-to-entalpic" });
+    }
+};
+
 const isEmailValid = (value) => {
     var input = document.createElement("input");
 
@@ -132,4 +148,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         element.insertAdjacentHTML("afterbegin", iconHTML);
     });
     setSource();
+    setTimeout(() => {
+        openFormModalOnGetParams();
+    }, 500);
 });
